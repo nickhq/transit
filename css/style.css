@@ -124,7 +124,6 @@ ul {
     cursor: default;
     position: relative;
     padding: 5rem 3rem;
-    background-color: #f1f1f1; 
 }
 
 .image {
@@ -197,18 +196,15 @@ ul {
     z-index: 1;
 }
 
-#banner .content h1{
+#banner .content h1 {
     margin-bottom: 0.65rem;
+    color: #ffffff;
 }
 
 #banner .content p {
     margin-bottom: 1.25rem;
 }
 
-#banner .content h1 {
-    margin-bottom: 0.65rem;
-    color: #ffffff;
-}
 
 ul.actions {
     cursor: default;

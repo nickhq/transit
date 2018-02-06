@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -8,7 +9,7 @@
     font: inherit;
 }
 html{
-    font-size: 18px;
+    font-size: 18px;  
 }
 body{
     background-position: left top, center 0;
@@ -41,6 +42,12 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
     line-height: 1.3;
     margin: 0 0 1rem 0;
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    line-height: 1.2;
 }
 
 h2 {
@@ -198,6 +205,11 @@ ul {
     margin-bottom: 1.25rem;
 }
 
+#banner .content h1 {
+    margin-bottom: 0.65rem;
+    color: #ffffff;
+}
+
 ul.actions {
     cursor: default;
     list-style: none;
@@ -325,3 +337,59 @@ ul.features li:not(:first-child) .icon:after {
     background-color: #d5d5d5;
 }
 
+/* Highlight Section */
+
+#wrapper > .main.spotlight {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0;
+}
+
+#wrapper > .main.invert {
+    background-color: #454545;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+#wrapper > .main.accent1 {
+    background-color: #54c3e1;
+    background-image: linear-gradient(90deg, #54c3e1, #6bc378);
+}
+
+#wrapper > .main.spotlight .image {
+    position: relative;
+    width: 50%;
+    border-radius: 0;
+}
+
+#wrapper > .main.spotlight .content {
+    padding: 5rem 4rem 3rem 4rem;
+    width: 50%;
+}
+
+#wrapper > .main.spotlight.accent1 .content {
+    background-color: #54c3e1;
+    background-image: linear-gradient(90deg, #54c3e1, #6bc378);
+}
+
+#wrapper > .main.spotlight .content h2 {
+    margin-bottom: 0.65rem;
+}
+
+#wrapper > .main.invert h1, #wrapper > .main.invert h2, #wrapper > .main.invert h3, #wrapper > .main.invert h4, #wrapper > .main.invert h5, #wrapper > .main.invert h6 {
+    color: #ffffff;
+}
+
+#wrapper > .main.spotlight .content p {
+    margin-bottom: 1.25rem;
+}
+
+#wrapper > .main.invert input[type="submit"], #wrapper > .main.invert input[type="reset"], #wrapper > .main.invert input[type="button"], #wrapper > .main.invert button, #wrapper > .main.invert .button {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px #ffffff;
+    color: #ffffff !important;
+}
+
+#wrapper > .main.invert input[type="submit"]:hover, #wrapper > .main.invert input[type="reset"]:hover, #wrapper > .main.invert input[type="button"]:hover, #wrapper > .main.invert button:hover, #wrapper > .main.invert .button:hover {
+    background-color: rgba(255, 255, 255, 0.125);
+    color: #ffffff !important;
+}

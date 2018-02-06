@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+html{
+    font-size: 18px;
+}
+body{
+    background-position: left top, center 0;
+    padding: 6rem 0;
+    background-color: #ffffff;
+    color: #656565;
+    background-attachment: scroll fixed;
+    background-image: url("/img/overlay.png"), url("/img/bg.jpg");
+    background-repeat: repeat, no-repeat;
+    background-size: 256px cover;
+}
+
+body, button, input, select, textarea {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.65;
+}
+a {
+    text-decoration: none;
+    border-bottom: dotted 1px;
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+/* PAGE WRAPPER */
+#wrapper{
+    width: 55rem;
+    max-width: calc(100% - 6rem);
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 0.325rem;
+}
+
+
+/* HEADER */
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    padding-left: 1.25rem;
+}
+
+#header .logo {
+    flex-grow: 0;
+    flex-shrink: 1;
+    display: block;
+    height: inherit;
+    line-height: inherit;
+    color: #bbbbbb;
+    border-bottom: 0;
+}
+
+#header nav {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+#header nav a {
+    display: block;
+    padding: 0 1.25rem;
+    border-bottom: 0;
+    outline: 0;
+}
+
+#header nav a[href="#menu"] {
+    overflow: hidden;
+    transition: opacity 0.2s ease-in-out;
+    background-image: url('/img/menu.svg');
+    width: 1.75rem;
+    height: 1.75rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1.75rem;
+}
+
+/*BANNER SECTION*/
+#banner{
+    background-color: #454545; 
+    color: rgba(255, 255, 255, 0.75);
+    cursor: default;
+    position: relative;
+    padding: 5rem 3rem;
+    background-color: #f1f1f1; 
+}

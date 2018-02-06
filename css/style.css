@@ -255,10 +255,11 @@ input[type="submit"].wide, input[type="reset"].wide, input[type="button"].wide, 
 .icon:before {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     text-transform: none !important;
+    box-sizing: border-box;
+    font-family: 'FontAwesome';
 }
 
 .icon.major:before {

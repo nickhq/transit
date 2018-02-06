@@ -36,6 +36,18 @@ p{
     margin: 0 0 2rem 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: #54c3e1;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 0 0 1rem 0;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 300;
+}
+
 ul {
     list-style: disc;
     margin: 0 0 2rem 0;
@@ -226,4 +238,87 @@ input[type="submit"], input[type="reset"], input[type="button"], button, .button
 
 input[type="submit"].wide, input[type="reset"].wide, input[type="button"].wide, button.wide, .button.wide {
     width: 9rem;
+}
+
+.icon {
+    text-decoration: none;
+    position: relative;
+    border-bottom: none;
+}
+
+.icon.major {
+    display: inline-block;
+    margin: 0 0 1rem 0;
+    text-align: center;
+}
+
+.icon:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+}
+
+.icon.major:before {
+    display: block;
+    border: solid 1px #d5d5d5;
+    color: #54c3e1;
+    font-size: 2rem;
+    width: 5.25rem;
+    height: 5.25rem;
+    line-height: 5.25rem;
+    border-radius: 5.25rem;
+}
+/* Individual icons section */
+.fa-diamond:before {
+    content: "\f3a5";
+}
+
+.fa-commenting-o:before {
+    content: "\f27b";
+}
+
+.fa-save:before, .fa-floppy-o:before {
+    content: "\f0c7";
+}
+
+.fa-flag-o:before {
+    content: "\f11d";
+}
+
+/* SECTION*/
+section.special, article.special {
+    text-align: center;
+}
+
+#wrapper > .main {
+    padding: 4rem 3rem 2rem 3rem;
+}
+
+ul.features {
+    display: inline-flex;
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+}
+ul.features li:first-child {
+    padding-left: 0;
+}
+
+ul.features li h3 {
+    color: inherit;
+    font-size: 1rem;
+}
+
+ul.features li .icon:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -3.25rem;
+    width: 3.25rem;
+    height: 1px;
+    background-color: #d5d5d5;
 }
